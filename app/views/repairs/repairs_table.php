@@ -4,7 +4,7 @@
 
 <img src="<?=app('app_url')?>/images/icons/stock_cell-phone.png" class="main_icon">
 
-<h1>All Repairs</h1>
+<h1>All Repairss</h1>
 
 <p><a href="<?=app('url')?>/exec/repairs/form/">Create a new Repair</a></p>
 
