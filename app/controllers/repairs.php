@@ -15,13 +15,27 @@
                 {
                         $data = array
                         (
-                                "repairs" => query("select * from repairs 
+                                "repairs" => query("select * from repairs
                                 inner join jobs on repairs.job_id = jobs.job_id
-                                inner join technicians on repairs.technician_id = technicians.technician_id") 
+                                inner join technicians on repairs.technician_id = technicians.technician_id
+                                where repair_status_id = 1") 
+                        );
+                        view_plain("repairs/repairs_maintable",$data);
+                }
+                
+                function closerepaired()
+                {
+                        $data = array
+                        (
+                                "repairs" => query("select * from repairs
+                                inner join jobs on repairs.job_id = jobs.job_id
+                                inner join technicians on repairs.technician_id = technicians.technician_id
+                                where repair_status_id = 2") 
                         );
                         view_plain("repairs/repairs_maintable",$data);
                 }
 
+        
 
                 function form()
                 {

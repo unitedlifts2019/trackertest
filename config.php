@@ -23,7 +23,7 @@
         error_reporting(E_ALL);
         setlocale(LC_MONETARY, 'en_AU');
         date_default_timezone_set('Australia/Melbourne');
-		ini_set('display_errors', 'Off');
+		ini_set('display_errors', 'On');
 
         $library_folder = "/lib";
         $app_folder = "/app";

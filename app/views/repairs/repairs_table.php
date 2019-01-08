@@ -4,7 +4,7 @@
 
 <img src="<?=app('app_url')?>/images/icons/stock_cell-phone.png" class="main_icon">
 
-<h1>All Repairss</h1>
+<h1>All Open Repairs</h1>
 
 <p><a href="<?=app('url')?>/exec/repairs/form/">Create a new Repair</a></p>
 
@@ -24,6 +24,24 @@
     </thead>
     <tbody>
         <? $repairs->repaired()?>
+    </tbody>
+</table>
+
+<h1>All Closed Repairs</h1>
+<table id='sortTable'  class="tablesorter" border='0'>
+    <thead>
+        <tr>
+            <th width="80px">Time</th>
+            <th width="200px">Job Name</th>
+			<th width="80px">Repair ID</th>
+            <th width="50px">Lifts</th>
+            <th width="100px">Technician</th>
+            <th width="100px">Quote No</th>
+            <th width="120px"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <? $repairs->closerepaired()?>
     </tbody>
 </table>
 
