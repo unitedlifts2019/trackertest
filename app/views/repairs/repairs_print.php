@@ -136,6 +136,9 @@ fotter {
           <h1>Repair ID:
             <?=$repair["repair_id"]?>
           </h1>
+          <h2>Quote No:
+            <?=$repair["quote_no"]?>
+          </h2>
           <div class="date">Notice Time:
             <?=date(toDate($repair["repair_time"]))?>
             <?=toTime($repair["repair_time"])?>
@@ -188,6 +191,11 @@ fotter {
                 <b>Part Required:</b>
                 
                 <?=$repair["parts_description"]?>
+              </p>
+              <p>
+                <b>Work Description:</b>
+                
+                <?=$repair["repair_description"]?>
               </p>
             </div>
           </td>

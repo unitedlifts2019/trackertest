@@ -139,10 +139,11 @@
                         view_plain("jobs/jobs_maintenance",$data);                       
                 }
 				
-				function repair()
+		function repair()
                 {
                         $id = req("frm_job_id");
-                        $query = "select * from repairs where job_id = $id order by repair_date DESC";
+                        $query = "select * from repairs where job_id = $id order by repair_time DESC
+                                  ";
                         $results = query($query);
                         $data = array(
                                 "results"=>$results

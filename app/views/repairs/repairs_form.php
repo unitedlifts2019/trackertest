@@ -82,7 +82,8 @@
                 <label>Time of arrival</label><input type="datetime-local" name='frm_time_of_arrival'  id='frm_time_of_arrival' value='<?=$values["time_of_arrival"]?>'><br>
                 <label>Time of departure</label><input type="datetime-local" name='frm_time_of_departure'  id='frm_time_of_departure' value='<?=$values["time_of_departure"]?>'><br>
                           
-                <label>Parts Required</label><textarea name="frm_parts_required" id="frm_parts_required" style="width:300px"><?=$values["parts_required"]?></textarea><br>           
+                <label>Parts Required</label><textarea name="frm_parts_required" id="frm_parts_required" style="width:300px"><?=$values["parts_required"]?></textarea><br>
+                           
                 
                 <div class="clear"></div><br>            
                 <label></label><button id='formbutton'>Submit</button>  

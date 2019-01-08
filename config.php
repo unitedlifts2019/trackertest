@@ -8,7 +8,7 @@
 	//Overall Generic Application Vars
         $app["name"] = "Service Tracking";
         $app["version"] = "17.01.31";	 
-        $root_folder = "/melbourne-tracker";
+        $root_folder = "/trackertest";
 		
     /*Database Configuration Parameters*/
         $app["db_server"] = "localhost";

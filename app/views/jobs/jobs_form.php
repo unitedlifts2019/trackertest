@@ -110,7 +110,7 @@
         ?>        
     </div>    
 	
-	    <div id="repairs">
+	<div id="repair">
         <?php //Include the lifts screen if a job_id has been specified
         if($job["job_id"]){
             $jobs = new jobs();
@@ -165,7 +165,7 @@
             $('#frm_round_id').css("background-color",myVar);
         });
 		
-				if (<?=sess("auth_level")?> < 99){
+			if (<?=sess("auth_level")?> < 99){
 			$('#1').css("display", "none");
 			$('#2').css("display", "none");
 			$('#3').css("display", "none");		

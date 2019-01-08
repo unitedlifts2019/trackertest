@@ -9,8 +9,8 @@
     <tbody>
         <?while($row=mysqli_fetch_array($results)){?>
             <tr>
-                <td><?=toDateTime($row["repair_time"])?></td>
-                 <td><?=$row["technician_name"]?></td>         
+                <td><?=toDate($row["repair_time"])?></td>
+                 <td><?=$row["technician_id"]?></td>         
                    <td><?=liftNames($row["lift_ids"])?></td>
                    <td>
                     <a href="<?=app('url')?>/exec/repairs/form/?frm_repair_id=<?=$row['repair_id']?>">View Repairs</a>
