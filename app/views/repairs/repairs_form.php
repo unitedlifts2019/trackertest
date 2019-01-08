@@ -18,7 +18,7 @@
         <a href="<?=app('url')?>/exec/repairs/printPdf/?frm_repair_id=<?=$values['repair_id']?>" target="_blank">Print repair</a>
     </p>
     &nbsp;
-    <form action='<?=app("url")?>/exec/repairs/action/' id='repairForm' name='repairForm' method="post"  >
+    <form action='<?=app("url")?>/exec/repairs/action/' id='repairForm' name='repairForm' method="post" enctype="multipart/form-data">
         <div style="float:left;width:640px;background-color:#f9f9f9;padding:10px;border:1px solid #ccc;">
                 <h2>Job Details</h2>
                 
@@ -63,6 +63,7 @@
                 
                 <label>Quote No</label>
                 <input name="frm_quote_no" id="frm_quote_no" value='<?=$values["quote_no"]?>'><br> 
+                <label>File: </label><input type="file" name="file"  id="file"><a href="<?=app('url')?>/app/uploads/<?=$values["repair_attatch"]?>">Download</a><br>
                 <label>Order No</label>
                 <input name="frm_order_no" id="frm_order_no" value='<?=$values["order_no"]?>'><br> 
                 <label>Description </label><textarea name='frm_repair_description'  id='frm_repair_description' style="width:455px"><?=$values["repair_description"]?></textarea><br>

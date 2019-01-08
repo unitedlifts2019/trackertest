@@ -170,15 +170,15 @@
 						req("frm_active_time",strtotime(req("frm_active_time")));
 						req("frm_inactive_time",strtotime(req("frm_inactive_time")));
 						
-						       if($_FILES['file']){
+		    if($_FILES['file']){
                     if(uploadFile(app('app_path')."/uploads/")){
-                        req("frm_job_attatch",basename($_FILES['file']['name']));
+                    req("frm_job_attatch",basename($_FILES['file']['name']));
                     }
                 }
 				
-								 if($_FILES['file2']){
+		    if($_FILES['file2']){
                     if(uploadFile(app('app_path')."/uploads/")){
-                        req("frm_cancel_file",basename($_FILES['file2']['name']));
+                    req("frm_cancel_file",basename($_FILES['file2']['name']));
                     }
                 }
                         

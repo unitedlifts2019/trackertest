@@ -92,6 +92,11 @@
                         //Do some work to get the checked lift boxes
                         $lift_ids = "";
 
+                        if($_FILES['file']){
+                                if(uploadFile(app('app_path')."/uploads/")){
+                                req("frm_repair_attatch",basename($_FILES['file']['name']));
+                                }
+                            }
                         foreach ($_REQUEST as $req_var => $req_val) 
                         {
                                 if(strstr($req_var,"lift_"))
